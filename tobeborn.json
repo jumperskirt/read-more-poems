@@ -14,9 +14,9 @@
           {"name": "practicing", "size": 4840, "children": [
             {"name": "existence", "size": 5914}, 
             {"name": "like bach free throws souffles", "size": 3416},
-            {"name": "if nothing else", "size": 3416, "children":[
-              {"name": "remember this", "children": [
-               {"name": "given nothing else"}, 
+            {"name": "given", "size": 3416, "children":[
+              {"name": "nothing else", "children": [
+               {"name": "remember this"}, 
                {"name": "you are given death"},
                {"name": "the echo chamber of life"}
               ]} 
