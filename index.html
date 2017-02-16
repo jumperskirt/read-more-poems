@@ -2,7 +2,7 @@
 <html>
   <head>
   <meta charset="utf-8">
-    <title>the ouroboros</title>
+    <title>the existence of practice</title>
       <script type='text/javascript' src="https://d3js.org/d3.v4.min.js"></script>
       <script type="text/javascript" src="d3.v3.js"></script>
         <style>
@@ -12,18 +12,18 @@
           }
 
           .node circle {
-            fill: #fff;
-            stroke: steelblue;
+            /*fill: #800020;*/
+            stroke: #fff;
             stroke-width: 1.5px;
           }
 
           .node text {
-            font: 10px sans-serif;
+            font: 11px georgia;
           }
 
           .link {
             fill: none;
-            stroke: #ccc;
+            stroke: #fff;
             stroke-width: 1.5px;
           }
 
@@ -36,7 +36,9 @@
   
    <script>
 
-      var margin = {top: 20, right: 120, bottom: 20, left: 120},
+    //   var margin = {top: 20, right: 120, bottom: 20, left: 120},
+          var margin = {top: -120, right: 120, bottom: 20, left: 120},
+//960
           width = 960 - margin.right - margin.left,
           height = 800 - margin.top - margin.bottom;
 
@@ -86,7 +88,7 @@
             links = tree.links(nodes);
 
         // Normalize for fixed-depth.
-        nodes.forEach(function(d) { d.y = d.depth * 180; });
+        nodes.forEach(function(d) { d.y = d.depth * 80; });
 
         // Update the nodes…
         var node = svg.selectAll("g.node")
@@ -104,7 +106,7 @@
 
         nodeEnter.append("text")
             .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
-            .attr("dy", ".35em")
+            .attr("dy", ".35em") //.35em
             .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
             .text(function(d) { return d.name; })
             .style("fill-opacity", 1e-6);
@@ -116,7 +118,7 @@
 
         nodeUpdate.select("circle")
             .attr("r", 4.5)
-            .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+            .style("fill", function(d) { return d._children ? "#800020" : "#fff"; }); //"burgandy originally lightsteelblue"
 
         nodeUpdate.select("text")
             .style("fill-opacity", 1);

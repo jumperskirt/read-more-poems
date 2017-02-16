@@ -5,221 +5,26 @@
    "name": "is not a given",
    "children": [
     {
-     "name": "you are born"
-    },
-    {
-     "name": "to exist in a world",
+     "name": "you are born",  
      "children": [
-      {"name": "that affirms your existence", "size": 3938},
-      {"name": "is to be lucky", "size": 3812} 
-     ]   
-    },
-    {
-     "name": "when",
-     "children": [
-      {"name": "the world shouts", "size": 3534},
-      {"name": "you shouldn't exist", "size": 5731},
-      {"name": "when", "size": 7840},
-      {"name": "the world swears", "size": 5914},
-      {"name": "it doesn't care", "size": 3416},
-      {"name": "you exist", "size": 3416}
-     ]
-    }
-   ]
-  },
-  {
-   "name": "to have ever existed",
-   "children": [
-    {"name": "to exist", "size": 17010},
-    {"name": "and", "size": 5842},
-    {
-     "name": "continue to exist",
-     "children": [
-      {"name": "is to be", "size": 1983},
-      {"name": "brave", "size": 2047},
-      {"name": "is to be", "size": 1375},
-      {"name": "free", "size": 8746},
-      {"name": "have you wondered what it is to be brave?", "size": 2202},
-      {"name": "to be free?", "size": 1382},
-      {"name": "this is what it is", "size": 1629},
-      {"name": "to be brave", "size": 1675},
-      {"name": "to be free", "size": 2042}
-     ]
-    },
-    {"name": "some of us are lucky", "size": 1041},
-    {"name": "some of us are brave", "size": 5176},
-    {"name": "some of us are free", "size": 449}
-   ]
-  },
-  {
-   "name": "existence is practice",
-   "children": [
-    {
-     "name": "like playing bach",
-     "children": [
-      {"name": "like shooting free throws", "size": 721},
-      {"name": "like making souffle", "size": 4294}
-     ]
-    },
-    {"name": "when you get good at existing", "size": 1759},
-    {"name": "the only way you stay good", "size": 2165},
-    {"name": "is to remember", "size": 586},
-    {"name": "existence", "size": 3331},
-    {"name": "is", "size": 772},
-    {"name": "practice", "size": 3322}
-   ]
-  },
-  {
-   "name": "to be good",
-   "children": [
-    {"name": "is to consider", "size": 8833},
-    {"name": "the existence of others", "size": 1732}
-   ]
-  },
-  {
-   "name": "chairs",
-   "children": [
-    {"name": "stairs", "size": 4116}
-   ]
-  },
-  {
-   "name": "walls",
-   "children": [
-    {"name": "trees", "size": 1082},
-    {"name": "grates", "size": 1336},
-    {"name": "rivulets", "size": 319},
-    {"name": "mountains", "size": 10498},
-    {"name": "streams", "size": 2822},
-    {"name": "goats", "size": 9983},
-    {"name": "baby goats", "size": 2213},
-    {"name": "oceans", "size": 1681}
-   ]
-  },
-  {
-   "name": "heat",
-   "children": [
-    {"name": "pinecones", "size": 1616},
-    {"name": "turtles", "size": 1027},
-    {"name": "manatees", "size": 3891},
-    {"name": "me", "size": 891},
-    {"name": "mta worker", "size": 2893},
-    {"name": "bodega lady", "size": 5103},
-    {"name": "man blocking your way", "size": 3677},
-    {"name": "her walking too slow", "size": 781},
-    {"name": "a maybe-sometimes lover", "size": 4141},
-    {"name": "a maybe-sometimes friend", "size": 933},
-    {"name": "a maybe-sometimes mother", "size": 5130},
-    {"name": "father", "size": 3617},
-    {"name": "sister", "size": 3240},
-    {"name": "brother", "size": 2732},
-    {"name": "stranger", "size": 2039},
-    {
-     "name": "all",
-     "children": [
-      {"name": "one", "size": 593}
-     ]
-    },
-    {"name": "while", "size": 843}
-   ]
-  },
-  {
-   "name": "remembering",
-   "children": [
-    {"name": "existence is practice", "size": 2105}
-   ]
-  },
-  {
-   "name": "remembering",
-   "children": [
-    {"name": "what it is to be lucky", "size": 8258},
-    {"name": "what it is to be brave", "size": 10001},
-    {"name": "what it is to be free", "size": 8217},
-    {
-     "name": "to be good at the practice of existence",
-     "children": [
-      {"name": "is to be", "size": 9354},
-      {"name": "happy", "size": 9354},
-      {"name": "is to have", "size": 9354},
-      {"name": "power", "size": 1233}
-     ]
-    },
-    {"name": "yet", "size": 335},
-    {"name": "so few", "size": 335},
-    {"name": "believe", "size": 335},
-    {"name": "in", "size": 335},
-    {"name": "the existence of practice", "size": 335},
-    {"name": "that to be happy", "size": 383},
-    {"name": "that to have power", "size": 874},
-    {
-     "name": "reads like magic",
-     "children": [
-      {"name": "like", "size": 3165},
-      {"name": "mystery", "size": 3165},
-      {"name": "like", "size": 3165},
-      {"name": "miracle", "size": 3366}
-     ]
-    },
-    {"name": "", "size": 17705},
-    {"name": "", "size": 1486},
-    {"name": "have you wondered what it is to be happy? to have power?", "size": 17705},
-    {"name": "have you wondered what it is to fly? to live? to die?", "size": 1486}
-   ]
-  },
-  {
-   "name": "to die is a given.",
-   "children": [
-    {
-     "name": "if nothing else,"
-    },
-    {
-     "name": "",
-     "children": [
-      {"name": "", "size": 2138},
-      {"name": "", "size": 3824},
-      {"name": "", "size": 1353},
-      {"name": "", "size": 4665},
-      {"name": "", "size": 2649},
-      {"name": "", "size": 2832},
-      {"name": "", "size": 4896},
-      {"name": "", "size": 763},
-      {"name": "", "size": 5222},
-      {"name": "", "size": 7862},
-      {"name": "", "size": 8435}
-     ]
-    },
-    {
-     "name": "remember this,",
-     "children": [
-      {"name": "", "size": 20544},
-      {"name": "", "size": 19788},
-      {"name": "", "size": 10349},
-      {"name": "", "size": 3301},
-      {"name": "", "size": 19382},
-      {
-       "name": "",
-       "children": [
-        {"name": "", "size": 698},
-        {"name": "", "size": 5569},
-        {"name": "", "size": 353},
-        {"name": "", "size": 2247}
-       ]
-      },
-      {"name": "", "size": 11275},
-      {"name": "", "size": 7147},
-      {"name": "", "size": 9930}
-     ]
-    },
-    {
-     "name": "you",
-     "children": [
-      {"name": "are", "size": 20859},
-      {"name": "given", "size": 4614},
-      {"name": "death", "size": 10530}
-     ]
-    },
-    
-    {"name": "the echo chamber of life", "size": 16540}
-   ]
-  }
- ]
-}
+      {"name": "affirmed and lucky maybe", "size": 3},
+      {"name": "but ignored and brave probably", "size": 3},
+      {"name": "hated and free", "size": 3, "children": [
+        {"name": "i persist", "size": 5731, "children": [
+          {"name": "practicing", "size": 4840, "children": [
+            {"name": "existence", "size": 5914}, 
+            {"name": "like bach free throws souffles", "size": 3416},
+            {"name": "if nothing else", "size": 3416, "children":[
+              {"name": "remember this", "children": [
+               {"name": "given nothing else"}, 
+               {"name": "you are given death"},
+               {"name": "the echo chamber of life"}
+              ]} 
+              
+            ]}
+        ]}
+      ]}
+    ]} 
+  ]} 
+ ]}
+]}
