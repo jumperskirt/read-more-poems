@@ -1,17 +1,17 @@
 var expect = require('chai').expect
 var Connection = require('../src/connection')
-var Node = require('../src/poem')
+var Poem = require('../src/poem')
 
 describe('Connection', function() {
-  var aNode
+  var aPoem
 
   before(function() {
-    aNode = new Node()
+    aPoem = new Node()
   })
 
   it('adopts value and name from constructor parameters', function() {
-    var someConnection = new Connection(aNode, 'foo')
-    expect(someConnection.value).to.equal(aNode)
+    var someConnection = new Connection(aPoem, 'foo')
+    expect(someConnection.value).to.equal(aPoem)
     expect(someConnection.name).to.equal('foo')
   })
 })

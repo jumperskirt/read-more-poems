@@ -1,35 +1,35 @@
 /* eslint-disable no-unused-expressions, dot-notation */
 var expect = require('chai').expect
-var Game = require('../src/table')
-var Node = require('../src/node')
+var Table = require('../src/table')
+var Poem = require('../src/poem')
 
 // To start these specs, remove the x from xdescribe
-describe('Game', function() {
+describe('Table', function() {
 
-  var game
+  var table
   beforeEach(function() {
-    game = new Game()
+    table = new Table()
   })
 
-  it('has a nodes object to keep track of nodes', function() {
-    expect(game.nodes).to.eql({})
+  it('has a poems object to keep track of poems', function() {
+    expect(table.poems).to.eql({})
   })
 
   it('has a startingPoint property that is initially null', function() {
-    expect(game.startingPoint).to.be.null
+    expect(table.startingPoint).to.be.null
   })
 
-  describe('addNode', function() {
-    it('adds the node to an internal nodes object', function() {
-      game.addNode('fo', 'fo text')
-      expect(game.nodes.fo).to.be.instanceOf(Node)
+  describe('addPoem', function() {
+    it('adds the node to an internal poems object', function() {
+      table.addPoem('fo', 'fo text')
+      expect(table.poems.fo).to.be.instanceOf(Node)
     })
 
-    it('does not allow you to register two nodes with the same title', function() {
+    it('does not allow you to register two poems with the same title', function() {
       expect(function() {
-        game.addNode('foo', 'bar')
-        game.addNode('foo', 'could be different bar')
-        // in this instance the second .addNode should throw an instance of an Error object
+        table.addPoem('foo', 'bar')
+        table.addPoem('foo', 'could be different bar')
+        // in this instance the second .addPoem should throw an instance of an Error object
         // read more about the Error constructor here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
       }).to.throw(Error)
     })
@@ -37,25 +37,25 @@ describe('Game', function() {
     it('returns the node that was added', function() {
       // we need to return the Node that was added
       // to make things easier later on
-      expect(game.addNode('fluf', 'cats')).to.be.instanceOf(Node)
+      expect(table.addPoem('fluf', 'cats')).to.be.instanceOf(Node)
     })
 
     it('sets the starting point if it does not already exist', function() {
-      expect(game.startingPoint).to.be.null
+      expect(table.startingPoint).to.be.null
 
-      var shouldBeFirst = game.addNode('whatever', 'whatever')
-      var shouldBeSecond = game.addNode('foo', 'bar')
+      var shouldBeFirst = table.addPoem('whatever', 'whatever')
+      var shouldBeSecond = table.addPoem('foo', 'bar')
 
-      expect(game.startingPoint).to.equal(shouldBeFirst)
-      expect(game.nodes['foo']).to.be.ok
+      expect(table.startingPoint).to.equal(shouldBeFirst)
+      expect(table.poems['foo']).to.be.ok
     })
   })
 
   describe('getNode', function() {
-    it('gets a node from the nodes object by name', function() {
-      game.addNode('foo', 'some text')
-      expect(game.getNode('foo')).to.be.instanceOf(Node)
-      expect(game.getNode('foo').title).to.equal('foo')
+    it('gets a node from the poems object by name', function() {
+      table.addPoem('foo', 'some text')
+      expect(table.getNode('foo')).to.be.instanceOf(Node)
+      expect(table.getNode('foo').title).to.equal('foo')
     })
   })
 
@@ -64,15 +64,15 @@ describe('Game', function() {
     // a spy is a function that replaces another function and just
     // reports if it was called. We'll touch on this more later on...
 
-    // We're doing this because we want to test that Game class
+    // We're doing this because we want to test that table class
     // calls the connect method on the node class, but we don't
     // really want to test the Node class in this spec.
 
     // all we want to do is assert that the Node class gets a message
-    // from the Game class.
+    // from the table class.
     it("calls the first node's connect method", function() {
-      var node1 = game.addNode('foo1', 'bar1')
-      game.addNode('foo2', 'bar2')
+      var node1 = table.addPoem('foo1', 'bar1')
+      table.addPoem('foo2', 'bar2')
 
       // here we're *overwriting* node1's connect method.
       // this is so we can test if its been called!
@@ -81,13 +81,13 @@ describe('Game', function() {
         nodeConnectHasBeenCalled = true
       }
 
-      game.connect('foo1', 'foo2', 'some condition')
+      table.connect('foo1', 'foo2', 'some condition')
       expect(nodeConnectHasBeenCalled).to.be.true
     })
 
     it('throws an error if it cannot find the node', function() {
       expect(function() {
-        game.connect('asdf', 'fdsa', 'some condition')
+        table.connect('asdf', 'fdsa', 'some condition')
       }).to.throw(Error)
     })
   })
